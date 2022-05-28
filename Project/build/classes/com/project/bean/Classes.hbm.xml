@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.project.bean">
+	<class name="Classes" table="classes">
+
+		<id name="classid" column="Classid" type="int">
+			<generator class="increment" />
+		</id>
+
+		<property name="classname" column="ClassName" />
+	
+		
+		<set name="subjects">
+			<key column="classid" />
+			<one-to-many class="Subject" />
+		</set>
+		</class>
+		</hibernate-mapping> 

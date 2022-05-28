@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.project.bean">
+    <class  name="Teacher" table="teachers">
+        <id column="T_ID" name="t_id" type="int" >
+        <generator class="increment"/> 
+        </id>
+        
+        <property column="T_Name" name="t_name" type="string" />
+        <property column="T_Email" name="t_email" type="string" />
+        <property column="T_Phone" name="t_phone" type="string" />
+       
+       
+    </class>
+</hibernate-mapping>
